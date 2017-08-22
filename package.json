@@ -1,0 +1,22 @@
+{
+  "name": "zoom",
+  "version": "1.0.0",
+  "description": "Case study for ZoomRX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreeram19/zoom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreeram19/zoom/issues"
+  },
+  "homepage": "https://github.com/shreeram19/zoom#readme",
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}
