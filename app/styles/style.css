@@ -21,7 +21,7 @@ body {
 
 .task-item-wrapper {
   width: 150px;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 9px;
   border: 1px solid;
   cursor: move;
   text-align: center; }
