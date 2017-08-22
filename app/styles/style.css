@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.TaskManager-home .type-details {
+  text-align: center; }
+.TaskManager-home .task-type-wrapper {
+  width: 170px;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 7px 7px 0px rgba(50, 50, 50, 0.85);
+  -moz-box-shadow: 0px 7px 7px 0px rgba(50, 50, 50, 0.85);
+  box-shadow: 0px 7px 7px 0px rgba(50, 50, 50, 0.85); }
+.TaskManager-home .drop-wrapper {
+  min-height: 80px; }
+
+.task-item-wrapper {
+  width: 150px;
+  margin: 5px 5px 5px 5px;
+  border: 1px solid;
+  cursor: move; }
+  .task-item-wrapper .task-name {
+    text-align: center; }
+  .task-item-wrapper .task-desc {
+    text-align: center; }
+  .task-item-wrapper h4 {
+    text-align: center;
+    color: blue; }
+  .task-item-wrapper .edit.task-name {
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px; }
+  .task-item-wrapper .edit.task-desc {
+    text-align: left;
+    margin-left: 5px; }
+  .task-item-wrapper .add-button {
+    margin: 10px;
+    float: right; }
+
+/*# sourceMappingURL=style.css.map */

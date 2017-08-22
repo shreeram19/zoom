@@ -2,6 +2,8 @@
 <html ng-app="dragModule">
     <head>
         <title>ZoomRx</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/jquery.js"></script>
         <script src="../node_modules/angular/angular.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/services/Storage.js"></script> 
@@ -11,7 +13,22 @@
     </head>
     <body>
         <div class="TaskManager-home" ng-controller="TaskManagerController">
-          <task> </task>
+        
+           <div class="task-type-wrapper" ng-repeat= "type in listTypes" >
+                
+                <div class="type-details" ng-style="{'color': list[type].color }" >
+                     <h2> {{list[type].taskTypeName}} </h2>
+                     <button ng-click="addItem($event)" class="add-button">Add Task</button>
+                </div>
+                
+                <div class="drop-wrapper" taskTypeId="{{list[type].taskTypeID}}" ondragenter="dragEnter(this,event)" ondrop="dragDrop(this,event)" ondragover="return false" ondragleave="dragLeave(this,event)"> 
+                        
+                        <div class="item" ng-repeat="item in list[type].task" ondragstart="dragStart(this,event)" ondragend="dragEnd(this,event)" draggable="true" taskID="{{item.taskID}}" previousTypeID="{{list[type].taskTypeID}}">
+                            <task asset="item"></task>
+                        </div>
+                </div>
+               </div>
+         
         </div>
 
         <script src="scripts/controllers/TaskManagerController.js"></script> 

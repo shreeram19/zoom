@@ -3,50 +3,53 @@ module.service ('Tasks',['$rootScope' ,function($rootScope){
         "tasks":[{
             "type": 501,
             "taskID": 867001,
-            "name": "Complete Tasks abc",
-            "desc": "DO this taks before 10.30"
+            "name": "Call manager",
+            "desc": "Call the manager before 11 and discuss about The prod issue"
         },{
             "type": 501,
             "taskID": 867002,
-            "name": "Complete Tasks def",
-            "desc": "DO this taks before 9.30"
+            "name": "Complete filling the Time sheet",
+            "desc": "Time sheets needs to logged for billing"
         },{
             "type": 502,
             "taskID": 867003,
-            "name": "Complete Tasks ajklads",
-            "desc": "DO this task after completing task abc"
+            "name": "Call HR",
+            "desc": "Call the HR to discuss the issues"
         },{
             "type": 502,
             "taskID": 867004,
-            "name": "Complete Tasks efg",
-            "desc": "DO this task after completing task abc"
+            "name": "Pay the Phone bill",
+            "desc": "Pay using Paytm "
         },{
             "type": 502,
             "taskID": 867005,
-            "name": "Complete Tasks wer",
-            "desc": "DO this task after completing task iopoiiop"
+            "name": "Change directory before deploying ",
+            "desc": "Do not forget to change the directory before deploying it in Production"
         },{
             "type": 503,
             "taskID": 867006,
-            "name": "Complete Tasks",
-            "desc": "DO this task after completing task abc"
+            "name": "Take Medication",
+            "desc": "Take before food medication"
         },{
             "type": 503,
             "taskID": 867007,
-            "name": "Complete Tasks asdxass",
-            "desc": "DO this task after completing task abc"
+            "name": "Send email to Team ",
+            "desc": "Send email to Team about the Successful release"
         }]
     };   
     
     this.data.taskType = [{
         "taskTypeID" : 501,
-        "taskTypeName" : "Very Important"
+        "taskTypeName" : "Very Important",
+        "color" : "red" 
     },{
         "taskTypeID" : 502,
-        "taskTypeName" : "Important"
+        "taskTypeName" : "Important",
+        "color": "brown"
     },{
         "taskTypeID" : 503,
-        "taskTypeName" : "Good to Have"
+        "taskTypeName" : "Good to Have",
+        "color": 'green'
     }];
 
     var init = function(){
@@ -66,11 +69,7 @@ module.service ('Tasks',['$rootScope' ,function($rootScope){
             }
             this.data.taskTypeByID[task.type].task.push(task); 
         }
-        
-        
-        
-    
-    }
+   }
 
     init.call(this);
     
