@@ -23,7 +23,8 @@ body {
   width: 150px;
   margin: 5px 5px 5px 5px;
   border: 1px solid;
-  cursor: move; }
+  cursor: move;
+  text-align: center; }
   .task-item-wrapper .task-name {
     text-align: center; }
   .task-item-wrapper .task-desc {
@@ -33,12 +34,13 @@ body {
     color: blue; }
   .task-item-wrapper .edit.task-name {
     text-align: left;
-    padding-left: 10px;
     margin-left: 5px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    width: 125px; }
   .task-item-wrapper .edit.task-desc {
     text-align: left;
-    margin-left: 5px; }
+    margin-left: 5px;
+    width: 125px; }
   .task-item-wrapper .add-button {
     margin: 10px;
     float: right; }

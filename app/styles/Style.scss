@@ -34,6 +34,7 @@ body {
     margin: 5px 5px 5px 5px;
     border: 1px solid;
     cursor: move;
+    text-align: center;
 
     .task-name {
         text-align: center;
@@ -50,14 +51,15 @@ body {
 
     .edit.task-name {
         text-align: left;
-        padding-left: 10px;
         margin-left: 5px;
         margin-bottom: 5px;
+        width: 125px;
     }
 
     .edit.task-desc {
         text-align: left;
         margin-left: 5px;
+        width: 125px;
     }
     .add-button {
         margin: 10px;
