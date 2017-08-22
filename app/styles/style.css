@@ -34,12 +34,12 @@ body {
     color: blue; }
   .task-item-wrapper .edit.task-name {
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0;
     margin-bottom: 5px;
     width: 125px; }
   .task-item-wrapper .edit.task-desc {
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0;
     width: 125px; }
   .task-item-wrapper .add-button {
     margin: 10px;
